@@ -7,7 +7,11 @@
   "arrowParens": "always",
   "singleAttributePerLine": true,
   "bracketSameLine": true,
-  "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  "plugins": [
+    "@trivago/prettier-plugin-sort-imports",
+    "prettier-plugin-astro",
+    "prettier-plugin-tailwindcss"
+  ],
   "tailwindFunctions": ["clsx", "tv", "cn"],
   "overrides": [
     {
