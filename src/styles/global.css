@@ -2,8 +2,8 @@
 Imports / Plugins
 ********************************************/
 
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 /********************************************
 Dark Mode
@@ -16,7 +16,7 @@ Tailwind Configuration
 ********************************************/
 
 @theme {
-  --font-sans: "Geist", "sans-serif";
+  --font-sans: 'Geist', 'sans-serif';
 }
 
 /********************************************
