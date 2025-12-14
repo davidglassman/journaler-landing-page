@@ -5,8 +5,7 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://davidglassman.github.io',
-  base: '/journaler-landing-page',
+  site: 'https://journaler.dev',
 
   server: {
     port: 3000
