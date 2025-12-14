@@ -10,13 +10,16 @@ interface Props {
 const { icon, title, text } = Astro.props;
 ---
 
-<div class="flex flex-col items-start justify-start">
-  <Icon
-    name={icon}
-    class="size-6 text-gray-900"
-  />
+<div
+  class="hover:border-primary flex flex-col items-start justify-start rounded-lg border border-gray-200 p-8">
+  <div class="bg-primary/10 mb-4 flex flex-col items-center justify-center rounded-lg p-3">
+    <Icon
+      name={icon}
+      class="text-primary size-6"
+    />
+  </div>
 
-  <h2>{title}</h2>
+  <h2 class="mb-2 text-lg font-bold text-gray-800">{title}</h2>
 
-  <p>{text}</p>
+  <p class="text-gray-500">{text}</p>
 </div>

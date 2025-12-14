@@ -57,12 +57,14 @@ import Footer from '@/components/Footer.astro';
 
     <title>Journaler</title>
   </head>
-  <body>
-    <NavBar />
-    <Hero />
-    <Preview />
-    <Features />
-    <Support />
-    <Footer />
+  <body class="flex w-screen flex-col items-center">
+    <div class="flex w-[70rem] flex-col items-start justify-center">
+      <NavBar />
+      <Hero />
+      <Preview />
+      <Features />
+      <Support />
+      <Footer />
+    </div>
   </body>
 </html>
