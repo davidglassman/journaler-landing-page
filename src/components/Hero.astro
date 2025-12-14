@@ -3,35 +3,52 @@ import { Button } from '@/components/ui/button';
 import { Icon } from 'astro-icon/components';
 ---
 
-<div class="w-screen px-8">
-  <div>FREE & OPEN SOURCE</div>
-
-  <h1>Where Your Days Go</h1>
-
-  <p>A free, open source daily journal that stays out of your way.</p>
-  <p>Your words, your files, your privacy.</p>
-
-  <div class="flex flex-row gap-2">
-    <Button>Download</Button>
-    <Button>View on GitHub</Button>
+<div class="flex w-screen flex-col items-center justify-start p-8">
+  <div
+    class="bg-primary/10 text-primary mb-8 rounded-full p-2 px-5 text-center text-xs font-medium">
+    FREE & OPEN SOURCE
   </div>
 
-  <div class="flex flex-row gap-2">
+  <h1 class="font-inter mb-8 text-6xl font-extrabold tracking-tight">Where Your Days Go</h1>
+
+  <div class="mb-8 flex flex-col items-center text-xl text-gray-500">
+    <p>A free, open source daily journal that stays out of your way.</p>
+    <p>Your words, your files, your privacy.</p>
+  </div>
+
+  <div class="mb-8 flex flex-row gap-2">
+    <Button>
+      <Icon
+        name="mdi:download"
+        class="size-4 text-white"
+      />
+      Download
+    </Button>
+    <Button variant="outline">
+      <Icon
+        name="mdi:github"
+        class="size-4 text-gray-800"
+      />
+      View on GitHub
+    </Button>
+  </div>
+
+  <div class="mb-2 flex flex-row gap-4">
     <Icon
       name="mdi:apple"
-      class="size-6 text-gray-900 dark:text-gray-200"
+      class="size-8 text-gray-600 dark:text-gray-400"
     />
 
     <Icon
       name="mdi:microsoft-windows"
-      class="size-6 text-gray-900 dark:text-gray-200"
+      class="size-8 text-gray-600 dark:text-gray-400"
     />
 
     <Icon
       name="simple-icons:linux"
-      class="size-6 text-gray-900 dark:text-gray-200"
+      class="size-8 text-gray-600 dark:text-gray-400"
     />
   </div>
 
-  <p>Available for Mac, Windows & Linux</p>
+  <p class="text-gray-500">Available for Mac, Windows & Linux</p>
 </div>
