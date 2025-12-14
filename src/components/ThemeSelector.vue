@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { Button } from '@/components/ui/button';
+import { Button } from '@components/ui/button';
 import { Sun, Moon } from 'lucide-vue-next';
 import { onMounted } from 'vue';
 

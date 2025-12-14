@@ -1,0 +1,15 @@
+---
+import { Button } from '@/components/ui/button';
+import ThemeSelector from '@/components/ThemeSelector.vue';
+---
+
+<div class="flex h-16 w-screen flex-row items-center justify-between px-8">
+  <p>Journaler</p>
+
+  <p>Features</p>
+  <p>GitHub</p>
+
+  <ThemeSelector client:only="vue" />
+
+  <Button>Download</Button>
+</div>

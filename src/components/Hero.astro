@@ -1,0 +1,37 @@
+---
+import { Button } from '@/components/ui/button';
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="w-screen px-8">
+  <div>FREE & OPEN SOURCE</div>
+
+  <h1>Where Your Days Go</h1>
+
+  <p>A free, open source daily journal that stays out of your way.</p>
+  <p>Your words, your files, your privacy.</p>
+
+  <div class="flex flex-row gap-2">
+    <Button>Download</Button>
+    <Button>View on GitHub</Button>
+  </div>
+
+  <div class="flex flex-row gap-2">
+    <Icon
+      name="mdi:apple"
+      class="size-6 text-gray-900 dark:text-gray-200"
+    />
+
+    <Icon
+      name="mdi:microsoft-windows"
+      class="size-6 text-gray-900 dark:text-gray-200"
+    />
+
+    <Icon
+      name="simple-icons:linux"
+      class="size-6 text-gray-900 dark:text-gray-200"
+    />
+  </div>
+
+  <p>Available for Mac, Windows & Linux</p>
+</div>
