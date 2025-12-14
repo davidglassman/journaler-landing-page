@@ -17,6 +17,7 @@ Tailwind Configuration
 
 @theme {
   --font-sans: 'Geist', 'sans-serif';
+  --breakpoint-xs: 30rem;
 }
 
 /********************************************
