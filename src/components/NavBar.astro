@@ -13,15 +13,20 @@ import { Icon } from 'astro-icon/components';
       <span class="text-xl font-semibold">Journaler</span>
     </a>
 
-    <div class="flex flex-row items-center gap-10">
-      <a class="text-neutral-800 dark:text-neutral-300" href="#features">Features</a>
+    <nav class="hidden items-center gap-8 md:flex">
       <a
-        class="text-neutral-800 dark:text-neutral-300"
+        href="#features"
+        class="text-base font-medium text-foreground/80 transition-colors hover:text-foreground">
+        Features
+      </a>
+      <a
         href=""
         target="_blank"
-        >GitHub</a
-      >
-    </div>
+        rel="noopener noreferrer"
+        class="text-base font-medium text-foreground/80 transition-colors hover:text-foreground">
+        GitHub
+      </a>
+    </nav>
 
     <div class="flex w-60 flex-row items-center justify-end gap-2">
       <ThemeSelector client:only="vue" />

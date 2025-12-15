@@ -3,28 +3,32 @@ import { Button } from '@/components/ui/button';
 import { Icon } from 'astro-icon/components';
 ---
 
-<div class="flex w-[70rem] flex-col items-center justify-center gap-4">
+<div class="flex w-[70rem] flex-col items-center justify-center text-center">
   <Icon
     name="mdi:heart-outline"
-    class="size-9 text-neutral-500 dark:text-neutral-400"
+    class="text-muted-foreground h-8 w-8"
   />
 
-  <h2 class="text-3xl font-bold">Support the Project</h2>
+  <h2 class="text-foreground mt-4 text-2xl font-semibold md:text-3xl">Support the Project</h2>
 
-  <p class="mb-3 text-sm text-neutral-500 dark:text-neutral-400">
-    Journaler is free and always will be. If you find it useful, consider buying me a coffee.
-  </p>
+  <div class="text-muted-foreground mt-4 flex flex-col items-center justify-center text-base">
+    <p>Journaler is free and always will be.</p>
+    <p>If you find it useful, consider buying me a coffee.</p>
+  </div>
 
-  <Button variant="outline">
+  <Button
+    variant="outline"
+    size="lg"
+    class="mt-6 bg-transparent">
     <a
       href=""
       target="_blank"
-      class="flex flex-row items-center justify-center gap-2 text-neutral-500">
+      class="flex flex-row items-center justify-center gap-2">
       <Icon
         name="fluent:drink-coffee-24-regular"
-        class="size-4 text-neutral-900 dark:text-white"
+        class="size-4"
       />
-      <p class="text-neutral-900 dark:text-neutral-200">Buy Me a Coffee</p></a
+      Buy Me a Coffee</a
     >
   </Button>
 </div>

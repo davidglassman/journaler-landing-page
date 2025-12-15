@@ -16,8 +16,8 @@ Tailwind Configuration
 ********************************************/
 
 @theme {
-  --font-geist: 'Geist', 'sans-serif';
-  --font-inter: 'Inter', 'sans-serif';
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', monospace;
   --breakpoint-xs: 30rem;
 }
 
@@ -147,7 +147,7 @@ Global Styles / Utilities
   }
 
   body {
-    @apply bg-background text-foreground font-geist tracking-wider;
+    @apply bg-background text-foreground font-sans antialiased;
   }
 }
 
