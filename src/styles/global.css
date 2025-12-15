@@ -101,13 +101,13 @@ Shadcn Theming
 .dark {
   --background: #131313;
   --foreground: #fcfcfc;
-  --card: #343434;
+  --card: #1c1b1b;
   --card-foreground: #fcfcfc;
   --popover: #343434;
   --popover-foreground: #fcfcfc;
   --primary: #59a7fb;
   --primary-foreground: #343434;
-  --secondary: #454545;
+  --secondary: #1c1b1b;
   --secondary-foreground: #fcfcfc;
   --muted: #454545;
   --muted-foreground: #b5b5b5;

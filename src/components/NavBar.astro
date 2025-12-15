@@ -6,24 +6,30 @@ import { Icon } from 'astro-icon/components';
 
 <header
   id="navbar"
-  class="fixed top-0 z-50 flex w-full justify-center border-b border-transparent bg-background/80 backdrop-blur-lg transition-colors duration-200">
+  class="bg-background/80 fixed top-0 z-50 flex w-full justify-center border-b border-transparent backdrop-blur-lg transition-colors duration-200">
   <div class="flex w-[70rem] flex-row items-center justify-between py-4">
-    <a href="#" class="flex w-60 flex-row items-center gap-2">
-      <img src="/favicon.png" alt="Journaler" class="size-6" />
+    <a
+      href="#"
+      class="flex w-60 flex-row items-center gap-2">
+      <img
+        src="/favicon.png"
+        alt="Journaler"
+        class="size-6"
+      />
       <span class="text-xl font-semibold">Journaler</span>
     </a>
 
     <nav class="hidden items-center gap-8 md:flex">
       <a
         href="#features"
-        class="text-base font-medium text-foreground/80 transition-colors hover:text-foreground">
+        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors">
         Features
       </a>
       <a
-        href=""
+        href="https://www.github.com/davidglassman/journaler-private"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-base font-medium text-foreground/80 transition-colors hover:text-foreground">
+        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors">
         GitHub
       </a>
     </nav>
@@ -33,7 +39,7 @@ import { Icon } from 'astro-icon/components';
 
       <Button>
         <a
-          href=""
+          href="https://www.github.com/davidglassman/journaler-private/releases"
           target="_blank"
           class="flex flex-row items-center justify-center gap-2 text-neutral-500">
           <Icon
