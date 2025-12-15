@@ -4,17 +4,17 @@ import FeatureCard from '@components/FeatureCard.astro';
 
 <div
   id="features"
-  class="flex w-full scroll-mt-16 flex-col items-center justify-center bg-neutral-50 py-24 dark:bg-neutral-950">
-  <div class="flex w-[70rem] flex-col items-center justify-start">
+  class="flex w-full scroll-mt-16 flex-col items-center justify-center bg-neutral-50 px-4 py-16 sm:px-6 sm:py-20 md:py-24 lg:px-8 dark:bg-neutral-950">
+  <div class="flex w-full max-w-[70rem] flex-col items-center justify-start">
     <p class="text-primary mb-4 text-xs font-medium tracking-wider uppercase">Features</p>
 
     <div
-      class="text-foreground mb-16 flex flex-col items-center justify-center text-3xl font-semibold tracking-tight text-balance md:text-4xl">
+      class="text-foreground mb-10 flex flex-col items-center justify-center text-center text-2xl font-semibold tracking-tight text-balance sm:text-3xl sm:mb-12 md:mb-16 md:text-4xl">
       <h2>Everything you need.</h2>
       <h2>Nothing you don't.</h2>
     </div>
 
-    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid w-full gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
       <FeatureCard
         icon="mdi:offline"
         title="Truly Offline"
