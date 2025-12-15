@@ -4,9 +4,9 @@
     aria-label="Toggle theme"
     variant="ghost"
     size="icon"
-    class="-ml-3 bg-transparent hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 dark:hover:bg-transparent">
-    <Moon class="hidden size-5 text-gray-300 dark:inline" />
-    <Sun class="size-5 text-gray-500 dark:hidden" />
+    class="-ml-3 cursor-pointer bg-transparent hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 dark:hover:bg-transparent">
+    <Moon class="hidden size-5 text-neutral-300 dark:inline" />
+    <Sun class="size-5 text-neutral-500 dark:hidden" />
   </Button>
 </template>
 

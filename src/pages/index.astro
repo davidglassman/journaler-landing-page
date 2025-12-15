@@ -43,7 +43,7 @@ import Footer from '@/components/Footer.astro';
   });
 </script>
 
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -56,15 +56,14 @@ import Footer from '@/components/Footer.astro';
     />
 
     <title>Journaler</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
   </head>
-  <body class="flex w-screen flex-col items-center">
-    <div class="flex w-[70rem] flex-col items-start justify-center">
-      <NavBar />
-      <Hero />
-      <Preview />
-      <Features />
-      <Support />
-      <Footer />
-    </div>
+  <body class="flex w-screen flex-col items-center gap-20 pt-32">
+    <NavBar />
+    <Hero />
+    <Preview />
+    <Features />
+    <Support />
+    <Footer />
   </body>
 </html>

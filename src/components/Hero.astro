@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Icon } from 'astro-icon/components';
 ---
 
-<div class="flex w-full flex-col items-center justify-start p-8">
+<div class="flex w-[70rem] flex-col items-center justify-start">
   <div
     class="bg-primary/10 text-primary mb-8 rounded-full p-2 px-5 text-center text-xs font-medium">
     FREE & OPEN SOURCE
@@ -11,44 +11,55 @@ import { Icon } from 'astro-icon/components';
 
   <h1 class="font-inter mb-8 text-6xl font-extrabold tracking-tight">Where Your Days Go</h1>
 
-  <div class="mb-8 flex flex-col items-center text-xl text-gray-500">
+  <div class="mb-8 flex flex-col items-center text-xl text-neutral-500 dark:text-neutral-400">
     <p>A free, open source daily journal that stays out of your way.</p>
     <p>Your words, your files, your privacy.</p>
   </div>
 
   <div class="mb-8 flex flex-row gap-2">
     <Button>
-      <Icon
-        name="mdi:download"
-        class="size-4 text-white"
-      />
-      Download
+      <a
+        href=""
+        target="_blank"
+        class="flex flex-row items-center justify-center gap-2 text-neutral-500">
+        <Icon
+          name="mdi:download"
+          class="size-4 text-white dark:text-neutral-900"
+        />
+        <p class="text-white dark:text-neutral-900">Download</p></a
+      >
     </Button>
+
     <Button variant="outline">
-      <Icon
-        name="mdi:github"
-        class="size-4 text-gray-800"
-      />
-      View on GitHub
+      <a
+        href=""
+        target="_blank"
+        class="flex flex-row items-center justify-center gap-2 text-neutral-500">
+        <Icon
+          name="mdi:github"
+          class="size-4 text-neutral-900 dark:text-white"
+        />
+        <p class="text-neutral-900 dark:text-neutral-200">View on GitHub</p></a
+      >
     </Button>
   </div>
 
   <div class="mb-2 flex flex-row gap-4">
     <Icon
       name="mdi:apple"
-      class="size-8 text-gray-600 dark:text-gray-400"
+      class="size-8 text-neutral-600 dark:text-neutral-300"
     />
 
     <Icon
       name="mdi:microsoft-windows"
-      class="size-8 text-gray-600 dark:text-gray-400"
+      class="size-8 text-neutral-600 dark:text-neutral-300"
     />
 
     <Icon
       name="simple-icons:linux"
-      class="size-8 text-gray-600 dark:text-gray-400"
+      class="size-8 text-neutral-600 dark:text-neutral-300"
     />
   </div>
 
-  <p class="text-gray-500">Available for Mac, Windows & Linux</p>
+  <p class="text-xs text-neutral-500 dark:text-neutral-400">Available for Mac, Windows & Linux</p>
 </div>

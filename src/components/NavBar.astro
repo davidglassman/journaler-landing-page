@@ -1,18 +1,60 @@
 ---
 import { Button } from '@/components/ui/button';
 import ThemeSelector from '@/components/ThemeSelector.vue';
+import { Icon } from 'astro-icon/components';
 ---
 
-<div class="flex w-full flex-row items-center justify-between px-8 py-4">
-  <p>Journaler</p>
+<header
+  id="navbar"
+  class="fixed top-0 z-50 flex w-full justify-center border-b border-transparent bg-background/80 backdrop-blur-lg transition-colors duration-200">
+  <div class="flex w-[70rem] flex-row items-center justify-between py-4">
+    <a href="#" class="flex w-60 flex-row items-center gap-2">
+      <img src="/favicon.png" alt="Journaler" class="size-6" />
+      <span class="text-xl font-semibold">Journaler</span>
+    </a>
 
-  <div class="flex flex-row items-center gap-6">
-    <p>Features</p>
-    <p>GitHub</p>
-  </div>
+    <div class="flex flex-row items-center gap-10">
+      <a class="text-neutral-800 dark:text-neutral-300" href="#features">Features</a>
+      <a
+        class="text-neutral-800 dark:text-neutral-300"
+        href=""
+        target="_blank"
+        >GitHub</a
+      >
+    </div>
 
-  <div class="flex flex-row items-center gap-2">
-    <ThemeSelector client:only="vue" />
-    <Button>Download</Button>
+    <div class="flex w-60 flex-row items-center justify-end gap-2">
+      <ThemeSelector client:only="vue" />
+
+      <Button>
+        <a
+          href=""
+          target="_blank"
+          class="flex flex-row items-center justify-center gap-2 text-neutral-500">
+          <Icon
+            name="mdi:download"
+            class="size-4 text-white dark:text-neutral-900"
+          />
+          <p class="text-white dark:text-neutral-900">Download</p></a
+        >
+      </Button>
+    </div>
   </div>
-</div>
+</header>
+
+<script>
+  const navbar = document.getElementById('navbar');
+
+  function updateNavbarBorder() {
+    if (window.scrollY > 0) {
+      navbar?.classList.remove('border-transparent');
+      navbar?.classList.add('border-neutral-200', 'dark:border-neutral-800');
+    } else {
+      navbar?.classList.remove('border-neutral-200', 'dark:border-neutral-800');
+      navbar?.classList.add('border-transparent');
+    }
+  }
+
+  updateNavbarBorder();
+  window.addEventListener('scroll', updateNavbarBorder);
+</script>

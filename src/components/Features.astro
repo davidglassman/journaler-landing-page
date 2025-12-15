@@ -2,47 +2,51 @@
 import FeatureCard from '@components/FeatureCard.astro';
 ---
 
-<div class="flex w-full flex-col items-center justify-start p-8">
-  <h3 class="text-primary mb-4 text-xs">FEATURES</h3>
+<div
+  id="features"
+  class="flex w-full scroll-mt-16 flex-col items-center justify-center bg-neutral-50 py-24 dark:bg-neutral-950">
+  <div class="flex w-[70rem] flex-col items-center justify-start">
+    <h3 class="text-primary mb-4 text-xs">FEATURES</h3>
 
-  <p class="text-3xl font-bold">Everything you need.</p>
-  <p class="mb-16 text-3xl font-bold">Nothing you don't.</p>
+    <p class="text-3xl font-bold">Everything you need.</p>
+    <p class="mb-16 text-3xl font-bold">Nothing you don't.</p>
 
-  <div class="grid grid-cols-3 gap-4">
-    <FeatureCard
-      icon="mdi:offline"
-      title="Truly Offline"
-      text="Your journal lives on your machine. No cloud. No account. No data collection. Just you and your words."
-    />
+    <div class="grid grid-cols-3 gap-4">
+      <FeatureCard
+        icon="mdi:offline"
+        title="Truly Offline"
+        text="Your journal lives on your machine. No cloud. No account. No data collection. Just you and your words."
+      />
 
-    <FeatureCard
-      icon="mdi:file-document-outline"
-      title="Plain Markdown Files"
-      text="No proprietary formats. Your entries are standard .md files you can open anywhere, forever."
-    />
+      <FeatureCard
+        icon="mdi:file-document-outline"
+        title="Plain Markdown Files"
+        text="No proprietary formats. Your entries are standard .md files you can open anywhere, forever."
+      />
 
-    <FeatureCard
-      icon="mdi:sync"
-      title="Sync Your Way"
-      text="Store your journal folder in Dropbox, iCloud, or anywhere. Move machines by moving a folder. That's it."
-    />
+      <FeatureCard
+        icon="mdi:sync"
+        title="Sync Your Way"
+        text="Store your journal folder in Dropbox, iCloud, or anywhere. Move machines by moving a folder. That's it."
+      />
 
-    <FeatureCard
-      icon="mdi:heart-outline"
-      title="Free & Open Source"
-      text="No tricks, no paywalls. View the code, verify the privacy claims, or contribute. It's yours."
-    />
+      <FeatureCard
+        icon="mdi:heart-outline"
+        title="Free & Open Source"
+        text="No tricks, no paywalls. View the code, verify the privacy claims, or contribute. It's yours."
+      />
 
-    <FeatureCard
-      icon="mdi:image-filter-center-focus-weak"
-      title="Focused by Design"
-      text="Distraction-free writing mode. No AI. No feature bloat. Just a clean space to write."
-    />
+      <FeatureCard
+        icon="mdi:image-filter-center-focus-weak"
+        title="Focused by Design"
+        text="Distraction-free writing mode. No AI. No feature bloat. Just a clean space to write."
+      />
 
-    <FeatureCard
-      icon="mdi:calendar-blank-outline"
-      title="Calendar Built In"
-      text="See your writing history at a glance. One entry per day. Jump to any date instantly."
-    />
+      <FeatureCard
+        icon="mdi:calendar-blank-outline"
+        title="Calendar Built In"
+        text="See your writing history at a glance. One entry per day. Jump to any date instantly."
+      />
+    </div>
   </div>
 </div>

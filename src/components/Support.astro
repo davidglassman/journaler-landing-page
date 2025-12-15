@@ -1,11 +1,30 @@
 ---
 import { Button } from '@/components/ui/button';
+import { Icon } from 'astro-icon/components';
 ---
 
-<div class="w-full px-8">
-  <h2>Support the Project</h2>
+<div class="flex w-[70rem] flex-col items-center justify-center gap-4">
+  <Icon
+    name="mdi:heart-outline"
+    class="size-9 text-neutral-500 dark:text-neutral-400"
+  />
 
-  <p>Journaler is free and always will be. If you find it useful, consider buying me a coffee.</p>
+  <h2 class="text-3xl font-bold">Support the Project</h2>
 
-  <Button>Buy Me a Coffee</Button>
+  <p class="mb-3 text-sm text-neutral-500 dark:text-neutral-400">
+    Journaler is free and always will be. If you find it useful, consider buying me a coffee.
+  </p>
+
+  <Button variant="outline">
+    <a
+      href=""
+      target="_blank"
+      class="flex flex-row items-center justify-center gap-2 text-neutral-500">
+      <Icon
+        name="fluent:drink-coffee-24-regular"
+        class="size-4 text-neutral-900 dark:text-white"
+      />
+      <p class="text-neutral-900 dark:text-neutral-200">Buy Me a Coffee</p></a
+    >
+  </Button>
 </div>
