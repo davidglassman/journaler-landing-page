@@ -13,7 +13,12 @@ export default defineConfig({
   },
 
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+    server: {
+      watch: {
+        ignored: ['**/node_modules/**', '**/.git/**']
+      }
+    }
   },
 
   integrations: [icon(), vue()]

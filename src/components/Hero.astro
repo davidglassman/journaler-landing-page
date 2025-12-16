@@ -4,18 +4,21 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <div class="flex w-full max-w-[70rem] flex-col items-center justify-start px-6 lg:px-8">
+  <!-- Badge -->
   <div
     class="bg-primary/10 text-primary mb-6 rounded-full px-4 py-2 text-center text-xs font-medium tracking-wider uppercase"
   >
     Free & Open Source
   </div>
 
+  <!-- Header -->
   <h1
     class="text-foreground text-center text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl lg:text-[64px] lg:leading-[1.1]"
   >
     Where Your Days Go
   </h1>
 
+  <!-- Description -->
   <p
     class="text-muted-foreground mx-auto mt-4 max-w-[600px] text-center text-base text-pretty sm:mt-6 sm:text-lg md:text-xl"
   >
@@ -23,6 +26,7 @@ import { Icon } from 'astro-icon/components';
     privacy.
   </p>
 
+  <!-- Buttons -->
   <div class="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:gap-4">
     <Button>
       <a
@@ -53,21 +57,25 @@ import { Icon } from 'astro-icon/components';
     </Button>
   </div>
 
+  <!-- Platforms -->
   <div class="mt-8 flex flex-col items-center gap-3">
     <div class="flex items-center gap-6">
       <Icon
         name="mdi:apple"
         class="text-muted-foreground h-5 w-5"
       />
+
       <Icon
         name="mdi:microsoft-windows"
         class="text-muted-foreground h-5 w-5"
       />
+
       <Icon
         name="simple-icons:linux"
         class="text-muted-foreground h-5 w-5"
       />
     </div>
+
     <p class="text-muted-foreground text-sm">Available for Mac, Windows & Linux</p>
   </div>
 </div>

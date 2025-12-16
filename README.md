@@ -1,12 +1,33 @@
-# Commands
+# Journaler Landing Page
 
-All commands are run from the root of the project, from a terminal:
+Landing page for [Journaler](https://github.com/davidglassman/journaler), a writing app.
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## Tech Stack
+
+- [Astro](https://astro.build)
+- [Vue](https://vuejs.org)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## Getting Started
+
+Requires Node.js 22+ and pnpm.
+
+```bash
+pnpm install
+pnpm dev
+```
+
+## Commands
+
+| Command             | Action                                     |
+| :------------------ | :----------------------------------------- |
+| `pnpm dev`          | Start local dev server at `localhost:3000` |
+| `pnpm build`        | Run checks and build production site       |
+| `pnpm preview`      | Preview build locally before deploying     |
+| `pnpm check`        | Run format, lint, typecheck, and build     |
+| `pnpm format`       | Format code with Prettier                  |
+| `pnpm format:check` | Check code formatting                      |
+| `pnpm lint`         | Lint code with ESLint                      |
+| `pnpm lint:fix`     | Lint and auto-fix issues                   |
+| `pnpm typecheck`    | Run TypeScript type checking               |
+| `pnpm astro ...`    | Run Astro CLI commands                     |

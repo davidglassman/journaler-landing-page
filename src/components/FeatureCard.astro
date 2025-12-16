@@ -13,6 +13,7 @@ const { icon, title, text } = Astro.props;
 <div
   class="group border-border bg-card hover:border-primary flex flex-col items-start justify-start rounded-xl border p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-md sm:p-6 md:p-8"
 >
+  <!-- Icon -->
   <div class="bg-primary/10 flex h-12 w-12 items-center justify-center rounded-lg">
     <Icon
       name={icon}
@@ -20,7 +21,9 @@ const { icon, title, text } = Astro.props;
     />
   </div>
 
+  <!-- Title -->
   <h3 class="text-foreground mt-4 text-lg font-semibold sm:mt-5 sm:text-xl">{title}</h3>
 
+  <!-- Text -->
   <p class="text-muted-foreground mt-2 text-sm leading-relaxed sm:text-base">{text}</p>
 </div>

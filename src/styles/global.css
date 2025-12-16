@@ -17,7 +17,6 @@ Tailwind Configuration
 
 @theme {
   --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'Geist Mono', monospace;
   --breakpoint-xs: 30rem;
 }
 
