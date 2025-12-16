@@ -6,7 +6,7 @@
   "tabWidth": 2,
   "arrowParens": "always",
   "singleAttributePerLine": true,
-  "bracketSameLine": true,
+  "bracketSameLine": false,
   "plugins": [
     "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-astro",

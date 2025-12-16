@@ -6,11 +6,15 @@ import { Icon } from 'astro-icon/components';
 
 <header
   id="navbar"
-  class="bg-background/80 fixed top-0 z-50 flex w-full justify-center border-b border-transparent backdrop-blur-lg transition-colors duration-200">
-  <div class="flex w-full max-w-[70rem] flex-row items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+  class="bg-background/80 fixed top-0 z-50 flex w-full justify-center border-b border-transparent backdrop-blur-lg transition-colors duration-200"
+>
+  <div
+    class="flex w-full max-w-[70rem] flex-row items-center justify-between px-4 py-4 sm:px-6 lg:px-0"
+  >
     <a
       href="#"
-      class="flex flex-row items-center gap-2">
+      class="flex flex-row items-center gap-2"
+    >
       <img
         src="/favicon.png"
         alt="Journaler"
@@ -19,80 +23,26 @@ import { Icon } from 'astro-icon/components';
       <span class="text-xl font-semibold">Journaler</span>
     </a>
 
-    <nav class="hidden items-center gap-8 md:flex">
+    <div class="flex flex-row items-center justify-end gap-8">
       <a
         href="#features"
-        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors">
+        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors"
+      >
         Features
       </a>
+
       <a
         href="https://www.github.com/davidglassman/journaler-private"
         target="_blank"
         rel="noopener noreferrer"
-        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors">
+        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors"
+      >
         GitHub
       </a>
-    </nav>
 
-    <div class="flex flex-row items-center gap-2">
       <ThemeSelector client:only="vue" />
-
-      <Button class="hidden sm:flex">
-        <a
-          href="https://www.github.com/davidglassman/journaler-private/releases"
-          target="_blank"
-          class="flex flex-row items-center justify-center gap-2 text-neutral-500">
-          <Icon
-            name="mdi:download"
-            class="size-4 text-white dark:text-neutral-900"
-          />
-          <p class="text-white dark:text-neutral-900">Download</p></a
-        >
-      </Button>
-
-      <!-- Mobile menu button -->
-      <button
-        id="mobile-menu-btn"
-        class="text-foreground flex size-10 items-center justify-center rounded-md md:hidden"
-        aria-label="Toggle menu">
-        <Icon
-          name="mdi:menu"
-          class="size-6"
-          id="menu-icon"
-        />
-        <Icon
-          name="mdi:close"
-          class="hidden size-6"
-          id="close-icon"
-        />
-      </button>
     </div>
   </div>
-
-  <!-- Mobile menu -->
-  <nav
-    id="mobile-menu"
-    class="bg-background/95 border-border absolute top-full left-0 hidden w-full flex-col border-b backdrop-blur-lg md:hidden">
-    <a
-      href="#features"
-      class="text-foreground/80 hover:bg-muted hover:text-foreground px-4 py-3 text-base font-medium transition-colors sm:px-6">
-      Features
-    </a>
-    <a
-      href="https://www.github.com/davidglassman/journaler-private"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-foreground/80 hover:bg-muted hover:text-foreground px-4 py-3 text-base font-medium transition-colors sm:px-6">
-      GitHub
-    </a>
-    <a
-      href="https://www.github.com/davidglassman/journaler-private/releases"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="text-foreground/80 hover:bg-muted hover:text-foreground px-4 py-3 text-base font-medium transition-colors sm:hidden sm:px-6">
-      Download
-    </a>
-  </nav>
 </header>
 
 <script>
