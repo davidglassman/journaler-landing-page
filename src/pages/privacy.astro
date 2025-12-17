@@ -1,0 +1,73 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import NavBar from '@/components/NavBar.astro';
+import Footer from '@/components/Footer.astro';
+---
+
+<BaseLayout title="Privacy Policy - Journaler">
+  <NavBar
+    showFeatures={false}
+    showBackLink={true}
+  />
+
+  <main class="flex w-full max-w-3xl flex-col gap-8 px-6 pb-16 lg:px-8">
+    <h1 class="text-foreground text-4xl font-bold">Privacy Policy</h1>
+
+    <p class="text-muted-foreground">Last updated: December 2025</p>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-foreground text-2xl font-semibold">The Short Version</h2>
+
+      <p class="text-foreground/90 leading-relaxed">
+        We don't collect any data. None. Zero. That's it.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-foreground text-2xl font-semibold">Data Collection</h2>
+
+      <p class="text-foreground/90 leading-relaxed">
+        Journaler does not collect, store, transmit, or process any personal data or information
+        from its users. Your journal entries and all associated data remain entirely on your device.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-foreground text-2xl font-semibold">Analytics & Tracking</h2>
+
+      <p class="text-foreground/90 leading-relaxed">
+        We do not use any analytics, tracking pixels, cookies, or any other mechanism to monitor
+        your usage of Journaler. We have no idea how you use the app, and we prefer it that way.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-foreground text-2xl font-semibold">Third-Party Services</h2>
+
+      <p class="text-foreground/90 leading-relaxed">
+        Journaler does not integrate with any third-party services that would collect your data.
+        Your information stays with you.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-foreground text-2xl font-semibold">Your Data, Your Control</h2>
+
+      <p class="text-foreground/90 leading-relaxed">
+        Since we don't collect any data, there's nothing for us to delete, share, or misuse. Your
+        privacy is guaranteed by design, not by policy.
+      </p>
+    </section>
+
+    <section class="flex flex-col gap-4">
+      <h2 class="text-foreground text-2xl font-semibold">Contact</h2>
+
+      <p class="text-foreground/90 leading-relaxed">
+        If you have any questions about this privacy policy, feel free to reach out. But rest
+        assured, we still won't collect your data.
+      </p>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

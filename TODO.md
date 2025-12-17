@@ -10,10 +10,12 @@
   - turn on focus mode
   - close sidebar and start typing again
   - end with typing some closing text
-- create privacy policy
+- add Suggest a Feature that links to roadmap?
+- add Report an Issue that links to GitHub issues?
+- maybe a contact me form?
 - update all links with real URL's
+  - https://ko-fi.com/davidglassman
 - adjust/finalize Feature card verbiage
-- set up Buy Me a Coffee link
 - confirm/adjust mobile/tablet styling
 - confirm dark mode styling
 - set workflow back to auto deploy on commit when everything else done

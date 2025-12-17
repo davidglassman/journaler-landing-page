@@ -1,5 +1,12 @@
 ---
 import ThemeSelector from '@/components/ThemeSelector.vue';
+
+interface Props {
+  showFeatures?: boolean;
+  showBackLink?: boolean;
+}
+
+const { showFeatures = true, showBackLink = false } = Astro.props;
 ---
 
 <header
@@ -9,27 +16,58 @@ import ThemeSelector from '@/components/ThemeSelector.vue';
   <div
     class="flex w-full max-w-[70rem] flex-row items-center justify-between px-4 py-4 sm:px-6 lg:px-0"
   >
-    <!-- Logo -->
-    <a
-      href="#"
-      class="flex flex-row items-center gap-2"
-    >
-      <img
-        src="/favicon.png"
-        alt="Journaler"
-        class="size-6"
-      />
-      <span class="text-xl font-semibold">Journaler</span>
-    </a>
+    <div class="flex flex-row items-center gap-6">
+      <!-- Logo -->
+      <a
+        href="/"
+        class="flex flex-row items-center gap-2"
+      >
+        <img
+          src="/favicon.png"
+          alt="Journaler"
+          class="size-6"
+        />
+        <span class="text-xl font-semibold">Journaler</span>
+      </a>
+
+      {
+        showBackLink && (
+          <a
+            href="/"
+            class="text-foreground/80 hover:text-foreground flex flex-row items-center gap-1.5 text-sm font-medium transition-colors"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m12 19-7-7 7-7" />
+              <path d="M19 12H5" />
+            </svg>
+            Back to Home
+          </a>
+        )
+      }
+    </div>
 
     <!-- Links -->
     <div class="flex flex-row items-center justify-end gap-8">
-      <a
-        href="#features"
-        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors"
-      >
-        Features
-      </a>
+      {
+        showFeatures && (
+          <a
+            href="#features"
+            class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors"
+          >
+            Features
+          </a>
+        )
+      }
 
       <a
         href="https://www.github.com/davidglassman/journaler-private"
