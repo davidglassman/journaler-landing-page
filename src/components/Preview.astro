@@ -1,11 +1,26 @@
 ---
+import PreviewCarousel from '@/components/PreviewCarousel.vue';
 
+import light1 from '@/assets/images/preview/light-1.png';
+import light2 from '@/assets/images/preview/light-2.png';
+import light3 from '@/assets/images/preview/light-3.png';
+import light4 from '@/assets/images/preview/light-4.png';
+import light5 from '@/assets/images/preview/light-5.png';
+
+import dark1 from '@/assets/images/preview/dark-1.png';
+import dark2 from '@/assets/images/preview/dark-2.png';
+import dark3 from '@/assets/images/preview/dark-3.png';
+import dark4 from '@/assets/images/preview/dark-4.png';
+import dark5 from '@/assets/images/preview/dark-5.png';
+
+const lightImages = [light1.src, light2.src, light3.src, light4.src, light5.src];
+const darkImages = [dark1.src, dark2.src, dark3.src, dark4.src, dark5.src];
 ---
 
-<div class="w-full px-6 lg:px-8">
-  <div
-    class="mx-auto flex aspect-square max-w-[70rem] flex-col items-center justify-center rounded-xl bg-neutral-50 sm:aspect-video dark:bg-neutral-900"
-  >
-    Preview
-  </div>
+<div class="-my-4 w-full px-6 sm:-my-6 md:-my-8 lg:px-8">
+  <PreviewCarousel
+    client:load
+    lightImages={lightImages}
+    darkImages={darkImages}
+  />
 </div>
