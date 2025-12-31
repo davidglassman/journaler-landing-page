@@ -1,12 +1,12 @@
 ---
 import ThemeSelector from '@/components/ThemeSelector.vue';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
-  showFeatures?: boolean;
   showBackLink?: boolean;
 }
 
-const { showFeatures = true, showBackLink = false } = Astro.props;
+const { showBackLink = false } = Astro.props;
 ---
 
 <header
@@ -36,51 +36,18 @@ const { showFeatures = true, showBackLink = false } = Astro.props;
             href="/"
             class="text-foreground/80 hover:text-foreground flex flex-row items-center gap-1.5 text-sm font-medium transition-colors"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <path d="m12 19-7-7 7-7" />
-              <path d="M19 12H5" />
-            </svg>
+            <Icon
+              name="mdi:arrow-back"
+              class="size-4 text-zinc-900 dark:text-white"
+            />
             Back to Home
           </a>
         )
       }
     </div>
 
-    <!-- Links -->
-    <div class="flex flex-row items-center justify-end gap-8">
-      {
-        showFeatures && (
-          <a
-            href="#features"
-            class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors"
-          >
-            Features
-          </a>
-        )
-      }
-
-      <a
-        href="https://www.github.com/davidglassman/journaler"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-foreground/80 hover:text-foreground text-base font-medium transition-colors"
-      >
-        GitHub
-      </a>
-
-      <!-- Theme -->
-      <ThemeSelector client:only="vue" />
-    </div>
+    <!-- Theme -->
+    <ThemeSelector client:only="vue" />
   </div>
 </header>
 
