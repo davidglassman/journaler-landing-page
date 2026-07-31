@@ -25,11 +25,11 @@
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/vue": "^5.1.4",
-    "@fontsource/inter": "^5.2.8",
-    "@iconify-json/fluent": "^1.2.36",
+    "@fontsource/inter": "^5.3.0",
+    "@iconify-json/fluent": "^1.2.54",
     "@iconify-json/mdi": "^1.2.3",
-    "@iconify-json/simple-icons": "^1.2.63",
-    "@tailwindcss/vite": "^4.1.17",
+    "@iconify-json/simple-icons": "^1.2.92",
+    "@tailwindcss/vite": "^4.3.3",
     "astro": "^5.18.2",
     "astro-icon": "^1.1.5",
     "class-variance-authority": "^0.7.1",
@@ -39,11 +39,11 @@
     "embla-carousel-fade": "^8.6.0",
     "embla-carousel-vue": "^8.6.0",
     "lucide-vue-next": "^0.561.0",
-    "reka-ui": "^2.6.1",
-    "tailwind-merge": "^3.4.0",
-    "tailwindcss": "^4.1.17",
+    "reka-ui": "^2.10.1",
+    "tailwind-merge": "^3.6.0",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
-    "vue": "^3.5.25"
+    "vue": "^3.5.40"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
