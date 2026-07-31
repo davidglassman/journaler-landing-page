@@ -38,7 +38,7 @@
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-fade": "^8.6.0",
     "embla-carousel-vue": "^8.6.0",
-    "lucide-vue-next": "^0.561.0",
+    "lucide-vue-next": "^1.0.0",
     "reka-ui": "^2.6.1",
     "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.17",
